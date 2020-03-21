@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/935dd5186d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="head">
+      <a class="navbar-brand" href="#">E-commerce</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#"><i class="fas fa-shopping-cart"></i> Canasta</a>
+          <button type="button" class="btn btn-outline-light">Salir</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-xl-3">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Buscar camisetas" aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+            </div>
+          </div>
+
+          <div class="list-group d-none d-lg-block d-xl-none d-none d-xl-block">
+            <h3>Categorias</h3>
+            <a href="#"
+              class="list-group-item list-group-item-action active d-flex justify-content-between align-items-center">
+              Todos
+              <span class="badge badge-pill badge-secondary">100</span>
+            </a>
+            <a href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Hombre<span
+                class="badge badge-pill badge-secondary">4</span>
+            </a>
+            <a href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Mujer<span
+                class="badge badge-pill badge-secondary">12</span>
+              </a>
+            <a href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Hipster<span
+                class="badge badge-pill badge-secondary">24</span>
+              </a>
+            <a href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center ">Metal<span
+                class="badge badge-pill badge-secondary">6</span>
+              </a>
+            <a href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Universidad<span
+                class="badge badge-pill badge-secondary">6</span>
+              </a>
+            <a href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Deportiva<span
+                class="badge badge-pill badge-secondary">8</span>
+              </a>
+            <a href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Rayas<span
+                class="badge badge-pill badge-secondary">11</span>
+              </a>
+            <a href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center ">Apretads<span
+                class="badge badge-pill badge-secondary">19</span>
+              </a>
+          </div>
+        </div>
+
+        <div class="col-lg-9 col-xl-9 d-flex flex-column align-items-center">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./imagenes/banner-slider-1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./imagenes/banner-slider-2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./imagenes/banner-slider-3.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+          <div class="row d-flex flex-row flex-wrap level2">
+
+            <div class="col-6 col-sm-6 col-md-4 product">
+              <div class="card">
+                <img class="card-img-top" src="./imagenes/camiseta-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="#" class="btn btn-primary">$229 <i class="fas fa-shopping-cart"></i></a>
+                  <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#detail">Detalles</a>
+                   
+                  <!-- The Modal -->
+                  <div class="modal align-items-center" id="detail">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Hipster Ultimate</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          <div class="alert alert-primary" role="alert">
+                            <i class="fas fa-info-circle"></i> Este producto está agotado
+                          </div>
+                          <div class="d-flex flex-row">
+                            <img class="card" src="./imagenes/camiseta-1.jpg" alt="hipster">
+                            <div class="d-flex flex-column " id="info">
+                              <p>Precio: <strong>299</strong></p>
+                              <p>Calificación: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                              <div class="d-flex flex-row pak">
+                                <span class="badge badge-warning">Hipster</span>
+                                <span class="badge badge-secondary">Deportiva</span>
+                              </div>
+                              <a href="http://"><i class="fas fa-heart"></i>
+                                Agregar a los deseos</a>
+                            </div>
+                          </div>                              
+
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                              <a class="nav-link active" data-toggle="tab" href="#home">Descripción</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#menu1">Comentarios</a>
+                            </li>                          
+                          </ul>
+
+                          <!-- Tab panes -->
+                          <div class="tab-content">
+                            <div class="tab-pane container active" id="home">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Vitae
+                              perferendis nobis dicta impedit assumenda, accusantium ipsa minima tempora sed! Mollitia,
+                              nostrum, nisi. Culpa dolor ab totam optio sapiente eius mollitia!</div>
+                            <div class="tab-pane container fade" id="menu1">
+                              <div class="form-group">   
+                                <div class="card" id="comentario">
+                                  <div class="card-header">
+                                    Juan Pablo comentó hace una hora
+                                  </div>
+                                  <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Esta camiseta está genial, la quiero!!</li>                                   
+                                  </ul>
+                                </div>                                 
+                                <textarea class="form-control" rows="5" id="comment">Ingresa tu comentario</textarea>
+                              </div>
+
+
+
+                            </div>
+                            
+                          </div>
+
+
+
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 product">
+              <div class="card">
+                <img class="card-img-top" src="./imagenes/camiseta-2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="#" class="btn btn-primary">$229 <i class="fas fa-shopping-cart"></i></a>
+                  <a href="#" class="btn btn-outline-secondary">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 product ">
+              <div class="card">
+                <img class="card-img-top" src="./imagenes/camiseta-3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">$229 <i class="fas fa-shopping-cart"></i></a>
+                  <a href="#" class="btn btn-outline-secondary">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 product ">
+              <div class="card">
+                <img class="card-img-top" src="./imagenes/camiseta-4.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">$229 <i class="fas fa-shopping-cart"></i></a>
+                  <a href="#" class="btn btn-outline-secondary">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 product ">
+              <div class="card">
+                <img class="card-img-top" src="./imagenes/camiseta-5.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">$229 <i class="fas fa-shopping-cart"></i></a>
+                  <a href="#" class="btn btn-outline-secondary">Detalles</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
